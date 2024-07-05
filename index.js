@@ -19,7 +19,9 @@ try {
 }
 
 app.get("/", (req, res) => {
-  res.send("Hello ");
+  res.send(
+    "Hello to access end point redirect to https://havabackend.onrender.com/search?iata=AAA "
+  );
 });
 
 app.use("/search", iataRouter);
